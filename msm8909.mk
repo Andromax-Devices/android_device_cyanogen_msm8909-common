@@ -75,7 +75,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 PRODUCT_PACKAGES += \
     gralloc.msm8909 \
     hwcomposer.msm8909 \
-    libgenlock \
     libtinyxml \
     memtrack.msm8909
 
@@ -206,8 +205,7 @@ PRODUCT_PACKAGES += \
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl \
-    android.hardware.renderscript@1.0-service
+    android.hardware.renderscript@1.0-impl
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -237,7 +235,6 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    libwcnss_qmi \
     wcnss_service
 
 PRODUCT_PACKAGES += \
