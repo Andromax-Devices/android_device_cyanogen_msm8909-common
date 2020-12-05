@@ -142,11 +142,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Keymaster
-ifneq ($(TARGET_PROVIDES_KEYMASTER),true)
-PRODUCT_PACKAGES += \
-    keystore.msm8909
-endif
-
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
