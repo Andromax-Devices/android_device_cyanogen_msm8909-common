@@ -194,6 +194,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # System Properties
+$(call inherit-product, device/cyanogen/msm8909-common/system_prop.mk)
 $(call inherit-product, device/cyanogen/msm8909-common/system_prop_msm8909.mk)
 
 # TimeKeep
