@@ -55,6 +55,7 @@ on post-fs-data
     # Create PERFD deamon related dirs
     mkdir /data/misc/perfd 2755 root system
     mkdir /data/system/perfd 2770 root system
+    rm /data/vendor/perfd/default_values
 
     # Create directories for Location services
     mkdir /data/misc/location 0770 gps gps
@@ -248,9 +249,7 @@ service qseecomd /system/vendor/bin/qseecomd
 service perfd /system/vendor/bin/perfd
     class main
     user root
-    group root readproc system
     disabled
-    writepid /dev/cpuset/system-background/tasks
 
 service thermal-engine /system/vendor/bin/thermal-engine
     class main
